@@ -3,13 +3,38 @@
 
 <head>
 	<title>Rock paper Siccsor Game</title>
+  <style>
+    body{
+      background-color: rgb(25,25,25);
+      color:white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .title{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .move-icon{
+      height:50px;
+    }
+    .move-button{
+      background-color: transparent;
+      border: 3px solid white;
+      border-radius: 70px;
+      width: 120px;
+      height: 120px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+  </style>
 </head>
 
 <body>
-  <button onclick="playGame('rock')">Rock</button>
-  <button onclick="playGame('paper')">Paper</button>
+  <p class="title">Rock Paper and Scissor</p>
+  <button class="move-button" onclick="playGame('rock')"><img src="./images/rock.png" class="move-icon"></button>
+  <button class="move-button" onclick="playGame('paper')"><img src="./images/paper.png" class="move-icon"></button>
 
-    <button  onclick="playGame('scissors')">Scissor</button>
+    <button class="move-button"  onclick="playGame('scissors')"><img src="./images/scissors.png" class="move-icon"></button>
     <button >Reset</button>
 <script>
 
